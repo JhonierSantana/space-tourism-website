@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        "54p": "54%",
+      },
+      fontFamily: {
+        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
