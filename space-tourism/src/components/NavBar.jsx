@@ -8,10 +8,8 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-12 h-12" />
       </div>
 
-      {/* Línea que atraviesa el navbar */}
       <div className="flex border border-gray-600 border-solid h-0.5 w-2/5 ml-32 absolute z-10"></div>
 
-      {/* Contenedor de los links con fondo transparente */}
       <div className="flex bg-opacity-10 bg-white h-24 w-54p items-center backdrop-blur-md">
         <ul className="flex font-barlow-condensed space-x-8 text-white tracking-widest w-max m-auto">
           <li className="relative mr-10 ml-24">
@@ -20,7 +18,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-gray-300 after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-white"
-                  : "hover:text-gray-400 hover:underline"
+                  : ""
               }
             >
               <span className="mr-1">00</span> HOME
