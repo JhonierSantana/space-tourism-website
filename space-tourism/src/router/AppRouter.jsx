@@ -14,7 +14,6 @@ const AppRouter = () => {
           <Route index element={<Main />} />
             <Route path="/destination" element={<Destination />} />
             <Route path="/technology" element={<Technology/>} />
-
           </Route>
         </Routes>
       </Router>

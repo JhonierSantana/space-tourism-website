@@ -13,18 +13,21 @@ export default {
       },
       fontFamily: {
         "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+        "bellefair": ["Bellefair", "serif"],  // Añadida la fuente Bellefair
       },
       spacing: {
         '4.75px': '4.75px',
       },
       fontSize: {
         '28px': '28px',
+        '56px': '56px',  // Añadido tamaño de fuente 56px
       },
       letterSpacing: {
         '4.75': '4.75px',
       },
-
-      //maxWidth 
+      lineHeight: {
+        '64.18px': '64.18px',  // Añadido line-height de 64.18px
+      },
       maxWidth: {
         '440px': '440px', 
       },
