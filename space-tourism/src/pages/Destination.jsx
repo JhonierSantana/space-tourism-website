@@ -36,7 +36,7 @@ const Destination = () => {
           />
         </div>
         <div className="w-full h-472p md:w-1/2 md:text-left">
-          <div className="flex md:justify-start space-x-6 mb-8 font-barlow-condensed gap-3">
+          <div className="flex md:justify-start space-x-6 mb-8 font-barlow-condensed gap-3  text-gray">
             {destinationData.destinations.map((destination) => (
               <button
                 key={destination.name}
@@ -51,10 +51,10 @@ const Destination = () => {
               </button>
             ))}
           </div>
-          <h2 className="text-100p tracking-widest font-bellefair uppercase mb-4">
+          <h2 className="text-100p tracking-widest font-bellefair uppercase mb-4 ">
             {selectedDestination.name}
           </h2>
-          <p className="text-lg mb-14 max-w-28rem font-barlow">
+          <p className="text-lg mb-14 max-w-28rem font-barlow text-gray">
             {selectedDestination.description}
           </p>
           <div className="flex justify-center md:justify-start space-x-16">
