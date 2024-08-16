@@ -10,6 +10,9 @@ export default {
         "57%": "57%",
         "15px": "15px",
         "568.07px": "568.07px",
+        "515px": "515px",
+        "47%": "47%",
+        "38%": "38%",
       },
       height: {
         "382px": "382px",
@@ -19,6 +22,7 @@ export default {
         "90vh": "90vh",
         "15px": "15px",
         "712px": "712px",
+        "527px": "527px",
       },
       fontFamily: {
         "barlow-condensed": ["Barlow Condensed", "sans-serif"],
@@ -45,7 +49,7 @@ export default {
         "440px": "440px",
         "28rem": "28rem",
         "25rem": "25rem",
-        "400px": "400px"
+        "400px": "400px",
       },
       textColor: {
         grayy: "#d4d4d4",

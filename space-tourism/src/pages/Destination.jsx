@@ -28,7 +28,7 @@ const Destination = () => {
         Destination
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-between w-full  mt-8">
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full md:w-47% flex justify-center">
           <img
             src={images[selectedDestination.name]}
             alt={selectedDestination.name}

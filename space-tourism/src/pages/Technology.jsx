@@ -20,13 +20,13 @@ const Technology = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center w-4/5 m-auto h-90vh mr-30">
+    <div className="flex flex-col justify-center h-90vh w-4/5 m-auto">
       <h1 className="text-left text-28px tracking-widest uppercase pb-2 font-barlow-condensed ml-4">
         <span className="font-bold text-gray-400 pr-5">03</span> SPACE LAUNCH
         101
       </h1>
-      <div className="flex items-center">
-        <div className="flex flex-col items-center mr-8 "> 
+      <div className="flex items-center ">
+        <div className="flex flex-col items-center mr-8 ">
           <ul className="space-y-8">
             {technologyData.technology.map((technology, index) => (
               <li key={index}>
@@ -62,7 +62,7 @@ const Technology = () => {
           <img
             src={images[selectedTechnology.name]}
             alt={selectedTechnology.name}
-            className="w-full h-auto"
+            className="w-515px h-527px"
           />
         </div>
       </div>

@@ -20,8 +20,8 @@ const Crew = () => {
   };
 
   return (
-    <div className="flex items-center w-4/5 ml-auto h-90vh pl-20">
-      <div className="mt-8 flex flex-col space-y-6 mr-20">
+    <div className="flex items-center w-9/12 justify-between m-auto h-90vh">
+      <div className="flex flex-col ml-32 ">
         <h1 className="text-left text-28px tracking-widest uppercase pb-10 font-barlow-condensed ">
           <span className="font-bold text-gray-500 pr-5">02</span> Meet your
           crew
