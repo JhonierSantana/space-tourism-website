@@ -21,7 +21,7 @@ const Technology = () => {
 
   return (
     <div className="flex flex-col justify-center w-4/5 m-auto h-90vh mr-30">
-      <h1 className="text-left text-28px tracking-widest uppercase pb-10 font-barlow-condensed ml-14">
+      <h1 className="text-left text-28px tracking-widest uppercase pb-2 font-barlow-condensed ml-4">
         <span className="font-bold text-gray-400 pr-5">03</span> SPACE LAUNCH
         101
       </h1>
@@ -45,8 +45,8 @@ const Technology = () => {
             ))}
           </ul>
         </div>
-        <div className="flex-1 px-16">
-          <h2 className="text-h4 font-Barlow Condensed uppercase tracking-wide mb-4">
+        <div className="flex-1 px-12">
+          <h2 className="text-h5 font-Barlow Condensed uppercase tracking-wide mb-1 text-gray-400">
             THE TERMINOLOGY...
           </h2>
 
@@ -54,7 +54,7 @@ const Technology = () => {
             {selectedTechnology.name}
           </h3>
 
-          <p className="text-lg leading-relaxed font-barlow max-w-400px">
+          <p className="text-lg leading-relaxed font-barlow max-w-400px text-gray-400">
             {selectedTechnology.description}
           </p>
         </div>
