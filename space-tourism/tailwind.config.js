@@ -37,6 +37,7 @@ export default {
       maxWidth: {
         "440px": "440px",
         "28rem": "28rem",
+        "400px": "400px"
       },
       textColor: {
         gray: "#d4d4d4",

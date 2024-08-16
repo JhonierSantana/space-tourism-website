@@ -16,7 +16,7 @@ const Main = () => {
         </p>
       </div>
       <div className="flex items-center justify-center flex-1 relative">
-        <div className="w-[274px] h-[274px] bg-white rounded-full flex items-center justify-center absolute bottom-[130px] left-[380px] cursor-pointer hover:before:content-[''] hover:before:absolute hover:before:w-[274px] hover:before:h-[274px] hover:before:bg-white hover:before:rounded-full hover:before:animate-ping">
+        <div className="w-[274px] h-[274px] bg-white rounded-full flex items-center justify-center absolute bottom-[220px] left-[380px] cursor-pointer hover:before:content-[''] hover:before:absolute hover:before:w-[274px] hover:before:h-[274px] hover:before:bg-white hover:before:rounded-full hover:before:animate-ping">
           <p className="text-black text-2xl font-bellefair relative">EXPLORE</p>
         </div>
       </div>

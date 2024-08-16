@@ -20,12 +20,13 @@ const Technology = () => {
   };
 
   return (
-    <div className="flex flex-col w-4/5 m-auto h-screen text-white">
-      <h1 className="text-left text-3xl tracking-wide uppercase my-6">
-        <span className="font-bold text-gray-400">03</span> SPACE LAUNCH 101
+    <div className="flex flex-col justify-center w-4/5 m-auto h-90vh mr-30">
+      <h1 className="text-left text-28px tracking-widest uppercase pb-10 font-barlow-condensed ml-14">
+        <span className="font-bold text-gray-400 pr-5">03</span> SPACE LAUNCH
+        101
       </h1>
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col items-center">
+      <div className="flex items-center">
+        <div className="flex flex-col items-center mr-8 "> 
           <ul className="space-y-8">
             {technologyData.technology.map((technology, index) => (
               <li key={index}>
@@ -45,15 +46,15 @@ const Technology = () => {
           </ul>
         </div>
         <div className="flex-1 px-16">
-          <h2 className="text-h5 font-barlow uppercase tracking-wide mb-4">
+          <h2 className="text-h4 font-Barlow Condensed uppercase tracking-wide mb-4">
             THE TERMINOLOGY...
           </h2>
 
-          <h3 className="text-4xl font-bellefair font-normal leading-tight text-left uppercase mb-6">
+          <h3 className="text-5xl font-bellefair font-normal leading-tight text-left uppercase mb-6">
             {selectedTechnology.name}
           </h3>
 
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed font-barlow max-w-400px">
             {selectedTechnology.description}
           </p>
         </div>
