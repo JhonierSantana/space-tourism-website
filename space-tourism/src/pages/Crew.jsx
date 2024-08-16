@@ -58,11 +58,13 @@ const Crew = () => {
           </ul>
         </div>
       </div>
-      <img
-        src={images[selectedCrew.name]}
-        alt={selectedCrew.name}
-        className="mask-gradient w-568.07px h-712px object-contain ml-10"
-      />
+      <div className="relative w-568.07px h-712px flex items-center justify-center overflow-hidden rounded-lg">
+        <img
+          src={images[selectedCrew.name]}
+          alt={selectedCrew.name}
+          className="h-auto object-contain mask-gradient"
+        />
+      </div>
     </div>
   );
 };

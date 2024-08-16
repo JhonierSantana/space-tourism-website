@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .mask-gradient {
-    mask-image: linear-gradient(black 80%);
-  }
+.mask-gradient {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
