@@ -4,6 +4,7 @@ import Layout from "../components/Layout/Layout";
 import Destination from "../pages/Destination";
 import Main from "../pages/Main";
 import Technology from "../pages/Technology";
+import Crew from "../pages/Crew";
 
 const AppRouter = () => {
   return (
@@ -11,9 +12,10 @@ const AppRouter = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
-          <Route index element={<Main />} />
+            <Route index element={<Main />} />
             <Route path="/destination" element={<Destination />} />
-            <Route path="/technology" element={<Technology/>} />
+            <Route path="/technology" element={<Technology />} />
+            <Route path="/crew" element={<Crew />} />
           </Route>
         </Routes>
       </Router>

@@ -24,7 +24,7 @@ const Destination = () => {
   return (
     <div className="flex flex-col justify-center w-4/5 m-auto h-90vh mr-10">
       <h1 className="text-left text-28px tracking-widest uppercase pb-10 font-barlow-condensed ml-14">
-        <span className="font-bold text-gray-400 pr-5">01</span> Pick Your
+        <span className="font-bold text-gray-500 pr-5">01</span> Pick Your
         Destination
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-between w-full  mt-8">
@@ -36,7 +36,7 @@ const Destination = () => {
           />
         </div>
         <div className="w-full h-472p md:w-1/2 md:text-left">
-          <div className="flex md:justify-start space-x-6 mb-8 font-barlow-condensed gap-3  text-gray">
+          <div className="flex md:justify-start space-x-6 mb-8 font-barlow-condensed gap-3  text-grayy">
             {destinationData.destinations.map((destination) => (
               <button
                 key={destination.name}
@@ -54,12 +54,13 @@ const Destination = () => {
           <h2 className="text-100p tracking-widest font-bellefair uppercase mb-4 ">
             {selectedDestination.name}
           </h2>
-          <p className="text-lg mb-14 max-w-28rem font-barlow text-gray">
+          <p className="text-lg mb-14 max-w-28rem font-barlow text-grayy">
             {selectedDestination.description}
           </p>
+          <div className="flex border border-gray-600 border-solid h-0.5 w-57% mb-6 relative"></div>
           <div className="flex justify-center md:justify-start space-x-16">
             <div>
-              <h3 className="text-14px tracking-wide mb-3  text-gray">
+              <h3 className="text-14px tracking-wide mb-3 text-grayy">
                 AVG. DISTANCE
               </h3>
               <p className="text-28px font-bellefair uppercase">
@@ -67,7 +68,7 @@ const Destination = () => {
               </p>
             </div>
             <div>
-              <h2 className="text-14px mb-3  text-gray">EST. TRAVEL TIME</h2>
+              <h2 className="text-14px mb-3  text-grayy">EST. TRAVEL TIME</h2>
               <p className="text-28px font-bellefair  uppercase">
                 {selectedDestination.travel}
               </p>

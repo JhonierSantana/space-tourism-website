@@ -7,6 +7,9 @@ export default {
         "54p": "54%",
         "274px": "274px",
         "445p": "445px",
+        "57%": "57%",
+        "15px": "15px",
+        "568.07px": "568.07px",
       },
       height: {
         "382px": "382px",
@@ -14,6 +17,8 @@ export default {
         "445p": "445px",
         "472p": "472px",
         "90vh": "90vh",
+        "15px": "15px",
+        "712px": "712px",
       },
       fontFamily: {
         "barlow-condensed": ["Barlow Condensed", "sans-serif"],
@@ -27,6 +32,8 @@ export default {
         "100p": "100px",
         "28px": "28px",
         "14px": "14px",
+        "32px": "32px",
+        "56px": "56px",
       },
       lineHeight: {
         "114.6px": "114.6px",
@@ -37,12 +44,12 @@ export default {
       maxWidth: {
         "440px": "440px",
         "28rem": "28rem",
+        "25rem": "25rem",
         "400px": "400px"
       },
       textColor: {
-        gray: "#d4d4d4",
+        grayy: "#d4d4d4",
       },
     },
-    plugins: [],  
   },
 };
