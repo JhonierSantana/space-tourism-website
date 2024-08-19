@@ -22,7 +22,7 @@ const Destination = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center lg:w-4/5 lg:m-auto md:w-full lg:h-90vh md:h-auto md:mr-10">
+    <div className="flex flex-col justify-center lg:w-4/5 lg:m-auto md:w-full lg:h-[85vh] md:h-auto md:mr-10">
       <h1 className="text-center md:text-left lg:text-[28px] md:text-[20px] lg:mt-0 md:mt-5 tracking-widest uppercase pt-[30px] pb-5 md:pb-10 font-barlow-condensed md:ml-14">
         <span className="font-bold text-gray-500 pr-5">01</span> Pick Your
         Destination

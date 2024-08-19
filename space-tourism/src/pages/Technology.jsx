@@ -76,7 +76,7 @@ const Technology = () => {
             <img
               src={images[selectedTechnology.name].desktop}
               alt={selectedTechnology.name}
-              className="w-[100%] lg:w-515px lg:h-527px h-auto object-cover"
+              className="w-[100%] lg:w-515px lg:h-527px md:h-[310px] h-auto object-cover"
             />
           </picture>
         </div>

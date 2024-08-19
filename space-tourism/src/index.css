@@ -7,7 +7,7 @@ html {
 }
 
 .mask-gradient {
-  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 93%);
 }
 
 @media (max-width: 768px) {
