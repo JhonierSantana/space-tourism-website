@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
   overflow-y: hidden;
 }
 .mask-gradient {
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }

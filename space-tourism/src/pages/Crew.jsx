@@ -15,55 +15,58 @@ const images = {
 const Crew = () => {
   const [selectedCrew, setSelectedCrew] = useState(crewData.crew[0]);
 
-  const handlecrewChange = (crew) => {
+  const handleCrewChange = (crew) => {
     setSelectedCrew(crew);
   };
 
   return (
-    <div className="flex items-center w-9/12 justify-between m-auto h-90vh">
-      <div className="flex flex-col ml-32 ">
-        <h1 className="text-left text-28px tracking-widest uppercase pb-10 font-barlow-condensed ">
-          <span className="font-bold text-gray-500 pr-5">02</span> Meet your
-          crew
-        </h1>
-        <div className="text-left pt-10 font-bellefair pb-10">
-          <h3 className="text-32px  text-gray-400 uppercase">
-            {selectedCrew.role}
-          </h3>
-          <h4 className="text-56px font-bellefair text-white mt-2 uppercase">
-            {selectedCrew.name}
-          </h4>
-          <p className="text-lg font-barlow text-grayy mt-4 max-w-25rem">
-            {selectedCrew.bio}
-          </p>
+    <div className="flex flex-col items-center md:items-start md:mt-5 w-4/5 md:w-9/12 justify-between m-auto h-full md:h-90vh">
+      <h1 className="md:w-4/5 md:m-auto md:absolute flex text-center md:text-left md:text-28px tracking-widest uppercase mt-10 md:mt-16 md:ml-32 font-barlow-condensed">
+        <span className="font-bold text-gray-500 pr-5">02</span> Meet your crew
+      </h1>
+
+      <div className="flex flex-col-reverse md:flex-row items-center w-full justify-between mt-10">
+        <div className="flex flex-col items-center md:items-start md:order-none md:ml-32">
+          <div className="text-center md:text-left pt-10 font-bellefair pb-10">
+            <h3 className="md:text-32px text-gray-400 uppercase">
+              {selectedCrew.role}
+            </h3>
+            <h4 className="text-[24px] md:text-56px font-bellefair text-white mt-2 uppercase">
+              {selectedCrew.name}
+            </h4>
+            <p className="text-[15px] mdtext-lg font-barlow text-grayy mt-4 max-w-25rem">
+              {selectedCrew.bio}
+            </p>
+          </div>
+
+          <div className="flex space-x-4 pt-10">
+            <ul className="flex gap-3">
+              {crewData.crew.map((crew) => (
+                <li key={crew.name}>
+                  <a
+                    href="#"
+                    className={`flex items-center justify-center rounded-full border-2 border-none text-lg font-bold p-1.5 ${
+                      selectedCrew.name === crew.name
+                        ? "bg-white text-black"
+                        : "bg-gray-700"
+                    }`}
+                    onClick={() => handleCrewChange(crew)}
+                  >
+                    {}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="flex space-x-4 pt-10">
-          <ul className="flex gap-3">
-            {crewData.crew.map((crew) => (
-              <li className="" key={crew.name}>
-                <a
-                  href="#"
-                  className={` 
-                     flex items-center justify-center rounded-full border-2 border-none text-lg font-bold p-1.5 ${
-                       selectedCrew.name === crew.name
-                         ? "bg-white text-black"
-                         : "bg-gray-700"
-                     }`}
-                  onClick={() => handlecrewChange(crew)}
-                >
-                  {}
-                </a>
-              </li>
-            ))}
-          </ul>
+
+        <div className="relative md:w-568.07px w-[327px] h-[223px] md:h-712px flex items-center justify-center overflow-hidden rounded-lg">
+          <img
+            src={images[selectedCrew.name]}
+            alt={selectedCrew.name}
+            className="md:h-auto object-contain mask-gradient"
+          />
         </div>
-      </div>
-      <div className="relative w-568.07px h-712px flex items-center justify-center overflow-hidden rounded-lg">
-        <img
-          src={images[selectedCrew.name]}
-          alt={selectedCrew.name}
-          className="h-auto object-contain mask-gradient"
-        />
       </div>
     </div>
   );

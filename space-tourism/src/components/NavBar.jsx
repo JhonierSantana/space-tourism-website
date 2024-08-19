@@ -1,16 +1,24 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <nav className="flex pt-12 pl-12 justify-between items-center relative">
-      <div>
-        <img src={logo} alt="logo" className="w-12 h-12" />
+    <nav className="pt-12 pl-12 justify-between items-center relative flex">
+      <div className="flex items-center justify-between w-full md:w-auto">
+        <div>
+          <img
+            src={logo}
+            alt="logo"
+            className="md:w-12 md:h-12 h-[40px] w-[40px]"
+          />
+        </div>
+        <HamburgerMenu />
       </div>
 
-      <div className="flex border border-gray-600 border-solid h-0.5 w-38% ml-44 absolute z-10"></div>
+      <div className="md:flex hidden border border-gray-600 border-solid h-0.5 w-38% ml-44 absolute z-10"></div>
 
-      <div className="flex bg-opacity-10 bg-white h-24 w-54p items-center backdrop-blur-md relative">
+      <div className=" hidden md:flex bg-opacity-10 bg-white h-24 w-54p items-center backdrop-blur-md relative">
         <ul className="flex font-barlow-condensed gap-10 text-white tracking-widest w-max m-auto ">
           <li className="relative ml-24">
             <NavLink
