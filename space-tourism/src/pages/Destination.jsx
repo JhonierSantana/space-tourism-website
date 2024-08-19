@@ -22,7 +22,7 @@ const Destination = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center lg:w-4/5 lg:m-auto md:w-full w-4/5 m-auto lg:h-90vh md:h-auto md:mr-10">
+    <div className="flex flex-col justify-center lg:w-4/5 lg:m-auto md:w-full lg:h-90vh md:h-auto md:mr-10">
       <h1 className="text-center md:text-left lg:text-[28px] md:text-[20px] lg:mt-0 md:mt-5 tracking-widest uppercase pt-[30px] pb-5 md:pb-10 font-barlow-condensed md:ml-14">
         <span className="font-bold text-gray-500 pr-5">01</span> Pick Your
         Destination
@@ -35,7 +35,7 @@ const Destination = () => {
             className="lg:w-[445px] lg:h-[445px] md:w-[300px] md:h-[300px] w-[170px]  h-[170px] object-contain lg:mb-0 md:mb-10 mb-5"
           />
         </div>
-        <div className="w-full h-472p md:w-1/2 lg:text-left">
+        <div className="h-472p md:w-1/2 lg:text-left">
           <div className="flex justify-center lg:justify-start md-justify-center space-x-6 mb-8 font-barlow-condensed gap-3  text-grayy">
             {destinationData.destinations.map((destination) => (
               <button
@@ -54,7 +54,7 @@ const Destination = () => {
           <h2 className="lg:text-[100px] md:text-[80px] text-[56px] lg:text-left text-center tracking-widest font-bellefair uppercase mb-4 ">
             {selectedDestination.name}
           </h2>
-          <p className="lg:text-lg md:text-[16px] text-[15px] lg:text-left text-center mb-8 md:mb-14 max-w-28rem font-barlow text-grayy">
+          <p className="lg:text-lg md:text-[16px] text-[15px] lg:text-left text-center mb-8 md:mb-14 max-w-[29rem] mr-2 ml-2 font-barlow text-grayy">
             {selectedDestination.description}
           </p>
           <div className="flex border border-gray-600 border-solid h-0.5 lg:w-57% mb-6 relative"></div>
