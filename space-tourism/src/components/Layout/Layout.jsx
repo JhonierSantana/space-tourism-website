@@ -14,11 +14,11 @@ const Layout = () => {
     case "/destination":
       backgroundClass = "destination-bg";
       break;
-    case "/technology":
-      backgroundClass = "technology-bg";
-      break;
     case "/crew":
       backgroundClass = "crew-bg";
+      break;
+    case "/technology":
+      backgroundClass = "technology-bg";
       break;
     default:
       backgroundClass = "home-bg";
