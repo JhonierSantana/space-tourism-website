@@ -1,9 +1,9 @@
 import crewData from "../data.json";
 import { useState } from "react";
-import douglasImage from "../assets/crew/image-douglas-hurley.webp";
-import markImage from "../assets/crew/image-mark-shuttleworth.webp";
-import victorImage from "../assets/crew/image-victor-glover.webp";
-import anoushehImage from "../assets/crew/image-anousheh-ansari.webp";
+import douglasImage from "/crew/image-douglas-hurley.webp";
+import markImage from "/crew/image-mark-shuttleworth.webp";
+import victorImage from "/crew/image-victor-glover.webp";
+import anoushehImage from "/crew/image-anousheh-ansari.webp";
 
 const images = {
   "Douglas Hurley": douglasImage,
@@ -20,7 +20,7 @@ const Crew = () => {
   };
 
   return (
-    <div className="flex flex-col items-center md:items-start md:mt-5 w-4/5 md:w-9/12 justify-between m-auto h-full md:h-90vh">
+    <div className="flex flex-col items-center md:items-start mt-10 md:mt-5 w-4/5 md:w-9/12 justify-between m-auto h-full md:h-90vh">
       <h1 className="md:w-4/5 md:m-auto md:absolute flex text-center md:text-left md:text-28px tracking-widest uppercase mt-10 md:mt-16 md:ml-32 font-barlow-condensed">
         <span className="font-bold text-gray-500 pr-5">02</span> Meet your crew
       </h1>
@@ -34,7 +34,7 @@ const Crew = () => {
             <h4 className="text-[24px] md:text-56px font-bellefair text-white mt-2 uppercase">
               {selectedCrew.name}
             </h4>
-            <p className="text-[15px] mdtext-lg font-barlow text-grayy mt-4 max-w-25rem">
+            <p className="text-[15px] mdtext-lg font-barlow text-grayy mt-4 max-w-[23rem]">
               {selectedCrew.bio}
             </p>
           </div>
@@ -60,11 +60,11 @@ const Crew = () => {
           </div>
         </div>
 
-        <div className="relative md:w-568.07px w-[327px] h-[223px] md:h-712px flex items-center justify-center overflow-hidden rounded-lg">
+        <div className="relative  flex items-center justify-center overflow-hidden rounded-lg">
           <img
             src={images[selectedCrew.name]}
             alt={selectedCrew.name}
-            className="md:h-auto object-contain mask-gradient"
+            className=" object-contain mask-gradient md:w-568.07px w-[327px] h-[223px] md:h-712px"
           />
         </div>
       </div>

@@ -1,9 +1,9 @@
 import destinationData from "../data.json";
 import { useState } from "react";
-import moonImage from "../assets/destination/image-moon.webp";
-import marsImage from "../assets/destination/image-mars.webp";
-import europaImage from "../assets/destination/image-europa.webp";
-import titanImage from "../assets/destination/image-titan.webp";
+import moonImage from "/destination/image-moon.webp";
+import marsImage from "/destination/image-mars.webp";
+import europaImage from "/destination/image-europa.webp";
+import titanImage from "/destination/image-titan.webp";
 
 const images = {
   Moon: moonImage,
