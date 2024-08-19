@@ -4,7 +4,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <nav className="pt-12 pl-12 justify-between items-center relative flex">
+    <nav className="lg:pt-12 md:pt-0 pt-12 pl-12 justify-between items-center relative flex">
       <div className="flex items-center justify-between w-full md:w-auto">
         <div>
           <img
@@ -16,11 +16,11 @@ const Navbar = () => {
         <HamburgerMenu />
       </div>
 
-      <div className="md:flex hidden border border-gray-600 border-solid h-0.5 w-38% ml-44 absolute z-10"></div>
+      <div className="lg:flex md:hidden hidden border border-gray-600 border-solid h-0.5 w-38% ml-44 absolute z-10"></div>
 
-      <div className=" hidden md:flex bg-opacity-10 bg-white h-24 w-54p items-center backdrop-blur-md relative">
-        <ul className="flex font-barlow-condensed gap-10 text-white tracking-widest w-max m-auto ">
-          <li className="relative ml-24">
+      <div className="hidden md:flex bg-opacity-10 bg-white h-24 lg:w-[54%] md:w-[65%] items-center backdrop-blur-md relative">
+        <ul className="flex font-barlow-condensed lg:gap-10 md:gap-0 text-white tracking-widest w-max m-auto ">
+          <li className="relative md:ml-16 lg:ml-24">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -29,7 +29,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <span className="mr-1">00</span> HOME
+              <span className="mr-1 lg:inline md:hidden">00</span> HOME
             </NavLink>
           </li>
           <li className="relative ml-10">
@@ -41,7 +41,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <span className="mr-1">01</span> DESTINATION
+              <span className="mr-1 lg:inline md:hidden">01</span> DESTINATION
             </NavLink>
           </li>
           <li className="relative ml-10">
@@ -53,7 +53,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <span className="mr-1">02</span> CREW
+              <span className="mr-1 lg:inline md:hidden">02</span> CREW
             </NavLink>
           </li>
           <li className="relative ml-10 mr-56">
@@ -65,7 +65,7 @@ const Navbar = () => {
                   : ""
               }
             >
-              <span className="mr-1">03</span> TECHNOLOGY
+              <span className="mr-1 lg:inline md:hidden">03</span> TECHNOLOGY
             </NavLink>
           </li>
         </ul>

@@ -13,12 +13,12 @@ html {
 @media (max-width: 768px) {
   html,
   body {
-    overflow-x: hidden;
+    overflow-y: auto; /* o scroll si prefieres */
+    height: auto; /* asegúrate que la altura se adapte */
   }
 }
 
 @layer utilities {
-  /* Por defecto, aplicamos las imágenes para móviles */
   .home-bg {
     @apply bg-[url('/home/background-home-mobile.jpg')] bg-cover bg-center min-h-screen;
   }
@@ -35,7 +35,6 @@ html {
     @apply bg-[url('/crew/background-crew-mobile.jpg')] bg-cover bg-center min-h-screen;
   }
 
-  /* Sobrescribimos para pantallas grandes */
   @screen lg {
     .home-bg {
       @apply bg-[url('/home/background-home-desktop.jpg')];
@@ -51,34 +50,6 @@ html {
 
     .crew-bg {
       @apply bg-[url('/crew/background-crew-desktop.jpg')];
-    }
-  }
-  @screen lg {
-    .tech-launch-vehicle {
-      background-image: url("/technology/image-launch-vehicle-portrait.jpg");
-    }
-
-    .tech-spaceport {
-      background-image: url("/technology/image-spaceport-portrait.jpg");
-    }
-
-    .tech-space-capsule {
-      background-image: url("/technology/image-space-capsule-portrait.jpg");
-    }
-  }
-
-  /* Imágenes para móviles */
-  @screen sm {
-    .tech-launch-vehicle-mobile {
-      background-image: url("/technology/image-launch-vehicle-landscape.jpg");
-    }
-
-    .tech-spaceport-mobile {
-      background-image: url("/technology/image-spaceport-landscape.jpg");
-    }
-
-    .tech-space-capsule-mobile {
-      background-image: url("/technology/image-space-capsule-landscape.jpg");
     }
   }
 }

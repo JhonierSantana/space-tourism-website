@@ -29,19 +29,19 @@ const Technology = () => {
   };
 
   return (
-    <div className="flex flex-col items-center md:items-start justify-center md:w-4/5 md:m-auto md:h-90vh md:mr-10 mt-14 md:mt-0">
-      <h1 className="text-center md:text-left md:text-28px md:mb-24 tracking-widest uppercase pb-2 font-barlow-condensed md:ml-4">
+    <div className="flex flex-col items-center md:items-start justify-center lg:w-4/5 lg:m-auto lg:h-90vh lg:mr-10 mt-14 lg:mt-0">
+      <h1 className="text-center lg:text-left lg:text-28px md:text-[20px] lg:mb-24 tracking-widest uppercase lg:pb-2 md:pb-10 pb-2 font-barlow-condensed lg:ml-4 md:ml-14">
         <span className="font-bold text-gray-400 pr-5">03</span> SPACE LAUNCH
         101
       </h1>
-      <div className="flex flex-col-reverse md:flex-row items-center md:items-start mt-10 md:mt-0 w-full">
-        <div className="flex flex-col items-center md:items-start md:mr-8 mt-10 md:mt-0">
-          <ul className="flex items-end md:md:flex-col gap-4 md:gap-0 md:space-y-8 ">
+      <div className="flex lg:flex-row flex-col-reverse items-center lg:items-start mt-10 md:mt-0 w-full">
+        <div className="flex flex-col items-center lg:items-start lg:mr-8 mt-10 lg:mt-0">
+          <ul className="flex items-end lg:md:flex-col lg:gap-0 gap-4 lg:space-y-8 ">
             {technologyData.technology.map((technology, index) => (
               <li key={index}>
                 <a
                   href="#"
-                  className={`w-[40px] h-[40px] md:w-20 md:h-20 flex items-center justify-center rounded-full border-2 border-gray-700 text-lg p-4 ${
+                  className={`lg:w-20 lg:h-20 md:w-[60px] md:h-[60px] w-[40px] h-[40px]  flex items-center justify-center rounded-full border-2 border-gray-700 text-lg p-4 ${
                     selectedTechnology.name === technology.name
                       ? "bg-white text-black"
                       : "bg-transparent text-white"
@@ -54,20 +54,20 @@ const Technology = () => {
             ))}
           </ul>
         </div>
-        <div className="flex-1 flex flex-col items-center md:items-start w-4/5 m-auto md:w-0 md:m-0">
+        <div className="flex-1 flex flex-col items-center lg:items-start w-4/5 m-auto lg:w-0 lg:m-0">
           <h2 className="text-[14px] md:text-h5 font-barlow-condensed uppercase tracking-wide mb-2 text-gray-400 text-center md:text-left">
             THE TERMINOLOGY...
           </h2>
 
-          <h3 className="text-[24px] md:text-5xl font-bellefair font-normal leading-tight text-center md:text-left uppercase mb-6">
+          <h3 className="text-[24px] lg:text-[56px] md:text-[40px] font-bellefair font-normal leading-tight text-center md:text-left uppercase mb-6">
             {selectedTechnology.name}
           </h3>
 
-          <p className="text-[15px] md:text-lg leading-relaxed font-barlow max-w-[445px] text-gray-400 text-center md:text-left">
+          <p className="lg:text-[18px] md:text-[16px] text-[15px] leading-relaxed font-barlow lg:max-w-[440px] max-w-[445px] text-gray-400 lg:text-left text-center">
             {selectedTechnology.description}
           </p>
         </div>
-        <div className="relative w-full md:w-[515px] h-auto mb-10 md:mb-0 md:mt-[-30px] md:flex-1">
+        <div className="relative w-full lg:w-[515px] h-auto mb-10 lg:mb-0 lg:mt-[-30px] lg:flex-1">
           <picture>
             <source
               media="(max-width: 768px)"
@@ -76,7 +76,7 @@ const Technology = () => {
             <img
               src={images[selectedTechnology.name].desktop}
               alt={selectedTechnology.name}
-              className="w-[99.6%] md:w-515px md:h-527px h-auto object-cover"
+              className="w-[100%] lg:w-515px lg:h-527px h-auto object-cover"
             />
           </picture>
         </div>
