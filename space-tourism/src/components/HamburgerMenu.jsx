@@ -48,19 +48,22 @@ const HamburgerMenu = () => {
       </div>
 
       <nav
-        className={`fixed top-0 right-0 h-screen w-[70%] bg-opacity-0 backdrop-blur-[50px] transform transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-0 right-0 h-screen w-[70%] bg-opacity-0 
+          backdrop-blur-[50px] transform transition-transform duration-300 ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
-        <ul className="flex flex-col justify-center font-barlow-condensed h-[80%] gap-10 ml-10">
+        <ul className="flex flex-col justify-center h-[80%] gap-10 ml-10">
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link
                 to={link.path}
-                className="text-white text-[26px]"
+                className="text-white text-[22px] tracking-[5px] font-barlow-condensed"
                 onClick={toggleMenu}
               >
-                <span className="font-bold mr-3">{link.number}</span>{" "}
+                <span className="font-bold mr-3 font-barlow-condensed">
+                  {link.number}
+                </span>{" "}
                 {link.name}
               </Link>
             </li>

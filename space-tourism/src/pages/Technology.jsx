@@ -31,7 +31,7 @@ const Technology = () => {
   return (
     <div className="flex flex-col items-center md:items-start justify-center lg:w-4/5 lg:m-auto lg:h-90vh lg:mr-10 mt-14 lg:mt-0">
       <h1 className="text-center lg:text-left lg:text-28px md:text-[20px] lg:mb-24 tracking-widest uppercase lg:pb-2 md:pb-10 pb-2 font-barlow-condensed lg:ml-4 md:ml-14">
-        <span className="font-bold text-gray-400 pr-5">03</span> SPACE LAUNCH
+        <span className="font-bold text-gray-500 pr-5">03</span> SPACE LAUNCH
         101
       </h1>
       <div className="flex lg:flex-row flex-col-reverse items-center lg:items-start mt-10 md:mt-0 w-full">

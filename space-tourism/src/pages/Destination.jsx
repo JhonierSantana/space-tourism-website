@@ -23,7 +23,7 @@ const Destination = () => {
 
   return (
     <div className="flex flex-col justify-center lg:w-4/5 lg:m-auto md:w-full lg:h-[85vh] md:h-auto md:mr-10">
-      <h1 className="text-center md:text-left lg:text-[28px] md:text-[20px] lg:mt-0 md:mt-5 tracking-widest uppercase pt-[30px] pb-5 md:pb-10 font-barlow-condensed md:ml-14">
+      <h1 className="md:text-left text-center lg:text-[28px] md:text-[20px] lg:mt-0 md:mt-5 tracking-widest uppercase pt-[30px] md:pb-10 pb-5 font-barlow-condensed md:ml-14">
         <span className="font-bold text-gray-500 pr-5">01</span> Pick Your
         Destination
       </h1>
@@ -54,7 +54,7 @@ const Destination = () => {
           <h2 className="lg:text-[100px] md:text-[80px] text-[56px] lg:text-left text-center tracking-widest font-bellefair uppercase mb-4 ">
             {selectedDestination.name}
           </h2>
-          <p className="lg:text-lg md:text-[16px] text-[15px] lg:text-left text-center mb-8 md:mb-14 max-w-[29rem] mr-2 ml-2 font-barlow text-grayy">
+          <p className="lg:text-lg md:text-[16px] text-[15px] lg:text-left text-center mb-8 lg:mb-14 md:mb-[2.3rem] max-w-[29rem] mr-2 ml-2 font-barlow text-grayy">
             {selectedDestination.description}
           </p>
           <div className="flex border border-gray-600 border-solid h-0.5 lg:w-57% mb-6 relative"></div>
@@ -71,7 +71,7 @@ const Destination = () => {
               <h2 className="text-14px mb-3 text-grayy text-center md:text-left">
                 EST. TRAVEL TIME
               </h2>
-              <p className="text-28px font-bellefair  uppercase">
+              <p className="lg:text-left md:text-left text-center text-28px font-bellefair  uppercase">
                 {selectedDestination.travel}
               </p>
             </div>

@@ -13,8 +13,8 @@ html {
 @media (max-width: 768px) {
   html,
   body {
-    overflow-y: auto; /* o scroll si prefieres */
-    height: auto; /* asegúrate que la altura se adapte */
+    overflow-y: auto;
+    height: auto;
   }
 }
 

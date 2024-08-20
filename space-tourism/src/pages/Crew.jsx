@@ -20,13 +20,13 @@ const Crew = () => {
   };
 
   return (
-    <div className="flex flex-col items-center md:items-start md:mt-5 mt-10 lg:w-9/12 md:w-full w-4/5 justify-between m-auto h-full lg:h-90vh">
-      <h1 className="md:w-4/5 md:m-auto lg:absolute flex text-center md:text-left lg:text-28px md:text-[20px] tracking-widest uppercaselg:mt-16 md:mt-[2rem]  mt-8 lg:ml-32 md:ml-[3rem] font-barlow-condensed">
+    <div className="flex flex-col md:items-start items-center md:mt-5 mt-10 lg:w-9/12 md:w-full w-4/5 justify-between m-auto lg:h-90vh h-full">
+      <h1 className="lg:absolute flex md:w-4/5 md:m-auto md:text-left text-center lg:text-28px md:text-[20px] tracking-widest uppercase lg:mt-16 md:mt-[2rem] mt-8 lg:ml-32 md:ml-[3rem] font-barlow-condensed">
         <span className="font-bold text-gray-500 pr-5">02</span> Meet your crew
       </h1>
 
       <div className="flex lg:flex-row md:flex-col flex-col-reverse items-center w-full justify-between lg:m-0 mt-10">
-        <div className="flex flex-col items-center lg:items-start md:order-none lg:ml-32 lg:mb-0 md:mb-4">
+        <div className="flex flex-col lg:items-start items-center md:order-none lg:ml-32 lg:mb-0 md:mb-4">
           <div className="lg:text-left text-center lg:pt-10 md:pt-0 pt-10 font-bellefair pb-10">
             <h3 className="lg:text-[32px] md:text-[24px] text-gray-400 uppercase">
               {selectedCrew.role}
@@ -59,7 +59,7 @@ const Crew = () => {
           </div>
         </div>
 
-        <div className="relative  flex items-center justify-center overflow-hidden rounded-lg">
+        <div className="relative flex items-center justify-center overflow-hidden rounded-lg">
           <img
             src={images[selectedCrew.name]}
             alt={selectedCrew.name}
